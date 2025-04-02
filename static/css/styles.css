@@ -1,0 +1,129 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #c0e8ff, #90c5ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #007BFF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Chat Section */
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+/* Conversation Container */
+.conversation-container {
+    padding: 20px;
+    height: 400px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Message Bubbles */
+.message {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #007BFF;
+    color: #fff;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #5d6d7e;
+    color: #fff;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Input Section */
+.input-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat Form */
+.chat-form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Primary Button */
+.send-button {
+    width: 40px;
+    height: 40px;
+    background: url('/static/send-icon.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* End Conversation Button (Primary Color) */
+.end-form {
+    width: 100%;
+}
+
+.end-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.end-button:hover {
+    background-color: #0056b3;
+}
